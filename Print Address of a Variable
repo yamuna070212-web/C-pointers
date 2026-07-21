@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    int a = 25;
+
+    printf("Value = %d\n", a);
+    printf("Address = %p", &a);
+
+    return 0;
+}
+Sample Output
+Value = 25
+Address = 0x61ff08
