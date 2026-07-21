@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    int num = 10;
+    int *ptr = &num;
+
+    *ptr = 50;
+
+    printf("Updated Value = %d", num);
+
+    return 0;
+}
+Sample Output
+Updated Value = 50
