@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int largest(int *arr, int n);
+
+int main()
+{
+    int arr[5] = {12,45,8,90,33};
+
+    printf("Largest = %d", largest(arr, 5));
+
+    return 0;
+}
+
+int largest(int *arr, int n)
+{
+    int i, max = *arr;
+
+    for(i = 1; i < n; i++)
+    {
+        if(*(arr + i) > max)
+            max = *(arr + i);
+    }
+
+    return max;
+}
+Sample Output
+Largest = 90
