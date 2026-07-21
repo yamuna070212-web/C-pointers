@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[5] = {10,20,30,40,50};
+    int *ptr = arr;
+
+    printf("%d\n", *ptr);
+
+    ptr++;
+
+    printf("%d\n", *ptr);
+
+    ptr++;
+
+    printf("%d", *ptr);
+
+    return 0;
+}
+Sample Output
+10
+20
+30
