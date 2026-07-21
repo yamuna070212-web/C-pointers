@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[5] = {10,45,25,80,30};
+    int *ptr = arr;
+    int i, max;
+
+    max = *ptr;
+
+    for(i = 1; i < 5; i++)
+    {
+        ptr++;
+
+        if(*ptr > max)
+            max = *ptr;
+    }
+
+    printf("Largest = %d", max);
+
+    return 0;
+}
+Sample Output
+Largest = 80
