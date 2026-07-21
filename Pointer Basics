@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int num = 10;
+    int *ptr;
+
+    ptr = &num;
+
+    printf("Value of num = %d\n", num);
+    printf("Address of num = %p\n", &num);
+    printf("Value of ptr = %p\n", ptr);
+    printf("Value pointed by ptr = %d\n", *ptr);
+
+    return 0;
+}
+Sample Output
+Value of num = 10
+Address of num = 0x61ff08
+Value of ptr = 0x61ff08
+Value pointed by ptr = 10
+
+Note: The memory address (0x61ff08) will be different on your computer.
