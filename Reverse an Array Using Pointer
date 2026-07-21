@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[5] = {10,20,30,40,50};
+    int *ptr = &arr[4];
+
+    while(ptr >= arr)
+    {
+        printf("%d ", *ptr);
+        ptr--;
+    }
+
+    return 0;
+}
+Sample Output
+50 40 30 20 10
