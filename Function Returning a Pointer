@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int* getValue()
+{
+    static int num = 100;
+    return &num;
+}
+
+int main()
+{
+    int *ptr = getValue();
+
+    printf("Value = %d", *ptr);
+
+    return 0;
+}
+Sample Output
+Value = 100
